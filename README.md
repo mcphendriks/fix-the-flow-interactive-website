@@ -20,6 +20,7 @@ Als Buurtbewoner van Amsterdam-Oost wil ik kunnen filteren in de stekjes om de m
 
 ## Licentie
 https://agilescrumgroup.nl/wat-is-een-user-story/
+<br>
 https://www.getfeedback.com/resources/ux/how-user-scenarios-help-to-improve-your-ux/
 
 
