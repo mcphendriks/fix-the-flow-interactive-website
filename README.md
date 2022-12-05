@@ -19,16 +19,8 @@ Als Buurtbewoner van Amsterdam-Oost wil ik kunnen filteren in de stekjes om de m
 
 
 ## Licentie
-https://agilescrumgroup.nl/wat-is-een-user-story/
-<br>
-https://www.getfeedback.com/resources/ux/how-user-scenarios-help-to-improve-your-ux/
-<br>
-https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/
-<br>
-https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector
-<br>
-https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
-<br>
-https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener
-
-
+- [Wireframing User Flow with Wireflows](https://balsamiq.com/learn/articles/wireflows/)
+- Tutorial  [if you only know one thing about JavaScript, this is what I would recommend](https://css-tricks.com/video-screencasts/150-hey-designers-know-one-thing-javascript-recommend/)
+- [MDN QuerySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
+- [MDN ClassList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) 
+- [MDN addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
