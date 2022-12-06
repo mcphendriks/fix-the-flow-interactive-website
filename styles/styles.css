@@ -94,6 +94,37 @@ position: relative;
 
 /* INTERACTIVE FILTERING  */
 
+/* .main-container > aside {
+  background-color: #FFF;
+  box-shadow: 1px 0 10px rgba(0,0,0,.15);
+  width: 10rem;
+  height: 30rem;
+  position: relative;
+ 
+  
+  
+}
+
+.filter-main-icon {
+  vertical-align: top;
+  display: inline-block;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.filter-main-icon img  {
+  width: 80px;
+}
+
+
+
+.filter-main-text {
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+} */
+
+
 /* MAIN */
 
 .main-container {
