@@ -52,3 +52,4 @@ const appendNewCard = () => {
 for (let i = 0; i < urls.length; i++) {
   appendNewCard();
 }
+

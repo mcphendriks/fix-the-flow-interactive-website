@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
     <link rel="stylesheet" href="styles/styles.css" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ruil platform voor stekjes - Buurtcampus</title>
+    <script src="./menu.js"></script>
   </head>
 </html>
 
@@ -45,32 +46,52 @@
 
   <main class="main-container">
 
-     <!-- <aside class="filter-menu>">
-        <h1>Filter:</h1>
-        <nav class="filter-main">
-            <ul class="filter-main-icon">
-                <img class="filter-icon-icon" src="assets/icons-plantswap/care.png" alt="plant-icon"> <span class="filter-main-text">Verzorging</span>
-                </li>
-            </ul>
-        </nav> -->
+    <aside class="container">
+      <div class="select-btn">
+        
+        <span class="btn-text"><img class="side-filter-icon" src="assets/icons-plantswap/care.png" alt="plant-icon">Verzorging</span>
+        <span class="arrow-dwn">
+            <i class="fa-solid fa-chevron-down"></i>
+        </span>
+      </div>
 
-      <aside class="side-filterbar">
+      <ul class="list-items">
+        <li class="item">
+            <Span class="checkbox">
+                <i class="fa-solid fa-check check-icon"></i>
+            </Span>
+            <span class="item-text">Makkelijk</span>
+        </li>
+
+        <li class="item">
+            <Span class="checkbox">
+                <i class="fa-solid fa-check check-icon"></i>
+            </Span>
+            <span class="item-text">Moeilijk</span>
+        </li>
+      </ul>
+    
+            
+    </aside>
+
+      <!-- <aside class="side-filterbar">
         <h1>Filter:</h1>
         <ul class="side-filterbar-inner">
-           <li class="side-filter-content">
+           <li>
              <img class="side-filter-icon" src="assets/icons-plantswap/care.png" alt="plant-icon">
-              <span class="side-filter-label">Verzorging</span> 
+              <span>Verzorging</span> 
          </li>
-         <li class="menu-icon-label">
+         <li>
             <img class="side-filter-icon" src="assets/icons-plantswap/care.png" alt="plant-icon">
-             <span class="side-filter-label">Verzorging</span> 
+             <span>Verzorging</span> 
         </li>
-        <li class="menu-icon-label">
+        <li>
             <img class="side-filter-icon" src="assets/icons-plantswap/care.png" alt="plant-icon">
-             <span class="side-filter-label">Verzorging</span> 
+             <span>Verzorging</span> 
         </li>
+         
         </ul>
-      </aside>
+      </aside> -->
         
       
   
@@ -279,6 +300,5 @@
     </section>
 </footer>
 
-    <script src="./menu.js"></script>
-    <script src="./script.js"></script>
+   
 </body>
