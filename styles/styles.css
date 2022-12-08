@@ -137,6 +137,12 @@ position: relative;
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: 0.3s;
+}
+
+/* add after javascript coding */
+.select-btn.open .arrow-dwn {
+  transform: rotate(-180deg);
 }
 
 .list-items {
@@ -146,7 +152,11 @@ position: relative;
   padding: 16px;
   background-color: #FFF;
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-  display: none;
+  display: none; 
+}
+
+.select-btn.open ~ .list-items {
+  display: block;
 }
 
 .list-items .item {
@@ -183,67 +193,22 @@ position: relative;
   transform: all 0.3s ease-in-out;
 }
 
+.item.checked .checkbox {
+  background-color: #2C4C1B;
+  border-color: #2C4C1B;
+}
+
 .checkbox .check-icon {
+  color: #FFF;
   font-size: 11px;
   transform: scale(0);
+  transform: all 0.3s ease-in-out;
 }
 
-/* .side-filterbar {
-  background-color: #FFF;
-  box-shadow: 1px 0 10px rgba(0,0,0,.15);
-  border-radius: 5px;
-  width: 13rem;
-  height: 60rem; */
-  /* margin-top: 2rem; Later gebruiken als wrapper vast staat */
-
-
-/* .side-filterbar h1 {
-font-size: 20px
+/* add after javascript coding */
+.item.checked .check-icon {
+  transform: scale(1);
 }
-
-
-.side-filterbar-inner {
-  list-style: none;
-  margin-top: 1rem;
-  text-decoration: none;
-  padding-left: 20px;
-  font-size: 20px;
-  color: #2C4C1B;
-  display: block;
-  font-weight: medium;
-  
-}
-
-.side-filterbar-inner li {
-  padding: 0 0 1rem 0;
-}
-
-
-.side-filter-icon {
-  width: 20px;
-}
-
-.side-filterbar li:hover {
-  color: #FFF;
-  background-color:rgba(33, 77, 18, 0.80);
-  width: 100%;
-  
-} */
-
-
-
-
-
-
-
-  
-  
-
-
-
-
-
-
 
 
 
