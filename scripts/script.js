@@ -56,7 +56,7 @@
 
 // MULTIBLE OPTIONS SELECT MENU
 
-const selectBtn = document.querySelector(".select-btn"),
+let selectBtn = document.querySelector('.select-btn');
 items = document.querySelectorAll(".item");
 
 // console.log(select-btn,items) delete after checking
@@ -65,14 +65,9 @@ selectBtn.addEventListener("click", () => {
   selectBtn.classList.toggle("open");
 });
 
-items.forEach(item => {
-  item.addEventListener("click", () => {
-    item.classList.toggle("checked");
+let checkBoxes = document.querySelectorAll("input[type='checkbox']");
+ 
+// console.log(checkboxes)
 
-  let checked = document.querySelectorAll("checked"),
-      btnText = document.querySelector(".btn-text");
-     
-      // console.log(checked,btnText) delte after checking 
-  })
-})
+
 
