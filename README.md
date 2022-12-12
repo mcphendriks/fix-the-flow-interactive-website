@@ -24,3 +24,4 @@ Als Buurtbewoner van Amsterdam-Oost wil ik kunnen filteren in de stekjes om de m
 - [MDN QuerySelector](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector)
 - [MDN ClassList](https://developer.mozilla.org/en-US/docs/Web/API/Element/classList) 
 - [MDN addEventListener](https://developer.mozilla.org/en-US/docs/Web/API/EventTarget/addEventListener)
+- https://www.freecodecamp.org/news/var-let-and-const-whats-the-difference/
