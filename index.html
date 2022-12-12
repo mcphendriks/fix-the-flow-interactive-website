@@ -28,6 +28,7 @@
           <a href="plant-match.html">Stek Match</a>
         </li>
       </ul>
+      <!-- Hamburger menu -->
       <div class="menu-icon" onclick="toggleMenu()">
         <i class="fa fa-bars"></i>
       </div>
@@ -35,8 +36,8 @@
   </header>
 
   <section class="section-home">
-    <img src="assets/leaf.png" alt="background leaf" />
-    <div class="section-home-intro">
+    <img src="assets/leaf.png" alt="background plant" />
+    <div class="section-home-content">
       <h1>Stekje Ruilen?</h1>
       <h2>
         De onderstaande stekjes zijn momenteel beschikbaar in de stekjes bieb.
@@ -46,13 +47,13 @@
     </div>
   </section>
 
-  <!--MAIN -->
+  <!--Main -->
   <div class="title-main">
   <h1>Makkelijk verzorging</h1>
   </div>
   
     <main class="main-container">
-
+<!-- Aside menu select checkbox -->
       <aside class="select-menu">
         <h1>Filter:</h1>
         <div class="select-inner">
@@ -67,13 +68,13 @@
 
           <ul class="list-items">
             <li class="item">
-                <input type="checkbox" class="easy-care"> 
+                <input type="checkbox" class="easy-care-checkbox"> 
               </input>
                 <span class="item-text">Makkelijk</span>
               </li>
 
             <li class="item">
-              <input type="checkbox" class="no-easy-care">
+              <input type="checkbox" class="hard-care-checkbox">
             </input>
               <span class="item-text">Moeilijk</span>
             </li>
@@ -84,15 +85,15 @@
       <!-- card 1 -->
       <section class="section-cards">
 
-      <div class="main-container-card" class="moeilijk">
+      <div class="card-plant" class="eas-care">
         <img
           src="https://www.plantje.nl/wp-content/uploads/2021/09/Bonsai-Ficus-Ginseng-p17-2-600x600.jpg.webp"
-          class="main-container-card-img"
-          alt="plant" />
-        <div class="main-container-overlay">
-          <div class="main-card-content">
-            <h1 class="main-card-title">Plant</h1>
-            <div class="main-card-icon">
+          class="card-plant-img"
+          alt="plant image" />
+        <div class="card-plant-overlay">
+          <div class="card-plant-content">
+            <h1 class="card-plant-title">Plant</h1>
+            <div class="card-plant-icon">
               <img
                 src="assets/assets-home-page/house-icon_white.png"
                 alt="house-icon" />
@@ -103,7 +104,7 @@
               <p>Weinig Water</p>
             </div>
             <a href="/"
-              ><button class="main-card-btn" role="button">
+              ><button class="card-plant-btn" role="button">
                 Plantje Ruilen
               </button></a
             >
@@ -112,15 +113,15 @@
       </div>
 
       <!--card 2-->
-      <div class="main-container-card" class="makkelijk">
+      <div class="card-plant" class="hard-care">
         <img
           src="https://www.plantje.nl/wp-content/uploads/2021/09/Bonsai-Ficus-Ginseng-p17-2-600x600.jpg.webp"
-          class="main-container-card-img"
+          class="card-plant-img"
           alt="plant" />
-        <div class="main-container-overlay">
-          <div class="main-card-content">
-            <h1 class="main-card-title">Plant</h1>
-            <div class="main-card-icon">
+        <div class="card-plant-overlay">
+          <div class="card-plant-content">
+            <h1 class="card-plant-title">Plant</h1>
+            <div class="card-plant-icon">
               <img
                 src="assets/assets-home-page/house-icon_white.png"
                 alt="house-icon" />
@@ -131,17 +132,17 @@
               <p>Weinig Water</p>
             </div>
             <a href="/"
-              ><button class="main-card-btn" role="button">
+              ><button class="card-plant-btn" role="button">
                 Plantje Ruilen
-              </button></a
-            >
+              </button></a>
           </div>
         </div>
       </div>
-
   </div>
 </section>
 </main>
+
+<!-- footer -->
 
   <footer class="ft-section">
     <section class="ft-section-rows">
@@ -176,5 +177,5 @@
     </section>
   </footer>
 
-  <script src="styles/script.js"></script>
+  <script src="scripts/script.js"></script>
 </body>
