@@ -52,14 +52,14 @@ body {
   font-weight: bold;
 }
 
-.top-nav-li li:hover {
-  color: #e2793b;
+.top-nav-li a:hover {
+  color: var(--tertiary-clr);
   transition: 0.3s ease;
 }
 
 /* Responsible for active state in the top-nav */
-.active {
-  color: #e2793b;
+.nav-active {
+  color: var(--tertiary-clr);
 }
 
 /* MAIN FORM  */

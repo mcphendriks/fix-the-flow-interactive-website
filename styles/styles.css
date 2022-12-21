@@ -57,13 +57,13 @@ body {
   color: var(--secondary-clr);
 }
 
-.top-nav-li:hover {
+.top-nav-li a:hover {
   color: var(--tertiary-clr);
   transition: 0.3s ease;
 }
 
 /* Responsible for active state in the top-nav */
-.active {
+.nav-active {
   color: var(--tertiary-clr);
 }
 
@@ -402,8 +402,3 @@ body {
 }
 
 /* Responsible for the location */
-
-iframe {
-  height: 150px;
-  width: 150px;
-}
