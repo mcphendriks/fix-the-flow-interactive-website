@@ -9,7 +9,7 @@
   --line-height: 1.5rem;
   --font-weight: bold;
   --background-code-clr: #ffffff;
-  --box-shhw: 1px 0 10px rgba(0, 0, 0, 0.15);
+  --box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 * {
@@ -20,7 +20,7 @@
 
 body {
   font-family: var(--font-name);
-  background-color: var(--primary-clr);
+  background-color: var(--background-code-clr);
 }
 
 .top-nav {
@@ -28,8 +28,9 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: var(--background-code-clr);
-  box-shadow: var(--box-shdw);
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   color: var(--secondary-clr);
+  padding: 0 3rem 0 3rem;
 }
 
 .top-nav a,
@@ -47,19 +48,18 @@ body {
 .top-nav-li {
   display: flex;
   gap: 1rem;
-  margin: 1.5rem;
   font-size: 1rem;
   font-weight: bold;
 }
 
 .top-nav-li a:hover {
-  color: var(--tertiary-clr);
+  color: var(--primary-clr);
   transition: 0.3s ease;
 }
 
 /* Responsible for active state in the top-nav */
 .nav-active {
-  color: var(--tertiary-clr);
+  color: var(--primary-clr);
 }
 
 /* MAIN FORM  */
@@ -75,6 +75,8 @@ body {
   overflow: hidden;
   margin-top: 1rem;
   border-radius: 5px;
+  border: 1px solid #bacbb1;
+  box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
 }
 
 .main-form h1 {
@@ -176,7 +178,7 @@ textarea:focus-visible {
 /* BUTTON  */
 
 .main-form button {
-  background-color: #333467;
+  background-color: var(--primary-clr);
   border: none;
   color: var(--white-clr);
   padding: 1rem;
@@ -186,18 +188,18 @@ textarea:focus-visible {
   box-shadow: var(--box-shdw);
   display: flex;
   margin: 0 auto;
-  flex-direction: column;
   justify-content: center;
+  width: 90%;
 }
 
 .main-form button:hover {
-  background: var(--tertiary-clr);
+  background: var(--primary-clr);
   transform: translateY(-0.25em);
   transition: all 0.25s;
 }
 
 .main-form a {
-  color: var(--secondary-clr);
+  color: var(--primary-clr);
   text-decoration: none;
   cursor: pointer;
   margin-top: 0.5rem;
