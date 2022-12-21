@@ -1,3 +1,16 @@
+:root {
+  --primary-clr: #4e7141;
+  --secondary-clr: #333467;
+  --tertiary-clr: #f26f21;
+  --white-clr: #fff;
+  --radius-value: 5px;
+  --text-color: #000;
+  --font-name: arial, helvetica, sans-serif;
+  --line-height: 1.5rem;
+  --font-weight: 500;
+  --background-code-clr: #ffffff;
+  --box-shhw: 1px 0 10px rgba(0, 0, 0, 0.15);
+}
 * {
   padding: 0;
   margin: 0;
@@ -5,52 +18,53 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-name);
 }
 
 /* Responsible for navigatie bar */
 
-.nav-bar {
-  width: 100%;
-  background-color: white;
-  box-shadow: 1px 0 10px rgba(0, 0, 0, 0.15);
-  padding-left: 20px;
-  padding-right: 20px;
+.top-nav {
   display: flex;
-  align-items: space-between;
   align-items: center;
-  text-decoration: none;
+  justify-content: space-between;
+  background-color: var(--white-clr);
+  box-shadow: var(--box-shdw);
+  color: var(--secondary-clr);
   position: fixed;
   z-index: 1;
+  width: 100%;
 }
 
-.nav-bar-logo {
+/* Logo */
+.top-nav img {
   display: inline-block;
+  max-width: 9rem;
 }
 
-.nav-bar-li {
-  list-style: none;
-  display: flex;
-}
-
-.nav-bar-item a {
-  display: inline-block;
-  padding: 10px 10px;
+.top-nav a,
+.top-nav li {
   text-decoration: none;
-  color: #333565;
+  list-style-type: none;
+}
+
+/* NAVBAR LIST  */
+.top-nav-li {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
+  color: var(--secondary-clr);
 }
 
-.nav-bar-item:hover a {
-  color: #e2793b;
+.top-nav-li:hover {
+  color: var(--tertiary-clr);
+  transition: 0.3s ease;
 }
-/* Responsible for hamburger menu / hidden for desktop version  */
 
-.menu-icon {
-  display: none;
-  font-size: 1.5rem;
-  color: rgb(26, 26, 77);
-  transition: all 0.3s ease;
+/* Responsible for active state in the top-nav */
+.active {
+  color: var(--tertiary-clr);
 }
 
 /* Responsible for the section header */
@@ -90,7 +104,7 @@ body {
 
 .section-home-content h2 {
   font-size: 26px;
-  font-weight: normal;
+  font-weight: var(--font-weight);
 }
 
 /* Responsible for the main  */
@@ -233,7 +247,7 @@ body {
   transform: all 0.3s ease-in-out;
 }
 
-/* Responsible for the  display js */
+/* Responsible for the display js checkbox selector click function */
 .card-plant.active {
   display: block;
 }
@@ -245,7 +259,10 @@ body {
 .hard {
   display: none;
 }
-*/ .section-plant {
+
+/* Responsible for the card plants */
+
+.section-plant {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;

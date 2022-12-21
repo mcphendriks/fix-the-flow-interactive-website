@@ -1,0 +1,208 @@
+:root {
+  --primary-clr: #4e7141;
+  --secondary-clr: #333467;
+  --tertiary-clr: #f26f21;
+  --white-clr: #fff;
+  --radius-value: 5px;
+  --text-color: #000;
+  --font-name: arial, helvetica, sans-serif;
+  --line-height: 1.5rem;
+  --font-weight: bold;
+  --background-code-clr: #ffffff;
+  --box-shhw: 1px 0 10px rgba(0, 0, 0, 0.15);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-name);
+  background-color: var(--primary-clr);
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--background-code-clr);
+  box-shadow: var(--box-shdw);
+  color: var(--secondary-clr);
+}
+
+.top-nav a,
+.top-nav li {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+/* LOGO */
+.top-nav img {
+  max-width: 9rem;
+}
+
+/* NAVBAR LIST  */
+.top-nav-li {
+  display: flex;
+  gap: 1rem;
+  margin: 1.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.top-nav-li li:hover {
+  color: #e2793b;
+  transition: 0.3s ease;
+}
+
+/* Responsible for active state in the top-nav */
+.active {
+  color: #e2793b;
+}
+
+/* MAIN FORM  */
+.main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.2s;
+  background-color: var(--background-code-clr);
+  max-width: 30rem;
+  margin: 0 auto;
+  padding: 1rem;
+  overflow: hidden;
+  margin-top: 1rem;
+  border-radius: 5px;
+}
+
+.main-form h1 {
+  display: flex;
+  margin: 0 auto;
+  color: var(--primary-clr);
+  font-size: 32px;
+  border-radius: var(--radius-value);
+}
+
+/* Responsible for all fieldsets  */
+
+.main-form fieldset {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: none;
+  transition: all 3s;
+  padding: 1rem 1rem 1rem;
+  position: relative;
+  background-color: rgb(209, 217, 210);
+  border-radius: 5px;
+}
+
+/* Responsible for the dash outline for drag and drop */
+.form-file div {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  outline: dashed 1px;
+  padding: 5rem 5rem 0;
+  border-radius: 5px;
+}
+
+.form-file p {
+  font-size: 16px;
+  color: #7e8f7b;
+  margin-bottom: 4rem;
+  margin-top: 0.5rem;
+}
+
+.form-file div:hover {
+  background-color: rgb(185, 202, 187);
+}
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+[type="file"] + label {
+  background: var(--primary-clr);
+  border-radius: 5px;
+  color: var(--background-code-clr);
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 1rem 1rem;
+  position: relative;
+}
+
+.file-btn i {
+  padding-right: 1rem;
+}
+
+/* FORM INPUT */
+
+input[type="text"],
+textarea {
+  margin-top: 0.25rem;
+  margin-bottom: 0.5rem;
+  border: 1px solid #8c968a;
+  border-radius: 5px;
+  background-color: #f1f8ef;
+  font-style: italic;
+  font-family: var(--font-name);
+  padding: 0.5rem;
+}
+
+label[for="name"],
+label[for="text"] {
+  color: rgb(72, 89, 72);
+  font-weight: 500;
+}
+/* input[type="email"]:valid { -> OEFENEN
+   
+  } */
+
+input:focus-visible,
+textarea:focus-visible {
+  outline: 1px solid var(--primary-clr);
+  border-radius: var(--radius-value);
+}
+
+/* BUTTON  */
+
+.main-form button {
+  background-color: #333467;
+  border: none;
+  color: var(--white-clr);
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: var(--radius-value);
+  cursor: pointer;
+  box-shadow: var(--box-shdw);
+  display: flex;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-form button:hover {
+  background: var(--tertiary-clr);
+  transform: translateY(-0.25em);
+  transition: all 0.25s;
+}
+
+.main-form a {
+  color: var(--secondary-clr);
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

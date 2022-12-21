@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="styles/upload-file.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload-file</title>
+  </head>
+  <body>
+    <header>
+      <nav class="top-nav">
+        <div>
+          <a href="/" alt="back to homepage"
+            ><img src="/assets/logo.png" alt="plant swap logo"
+          /></a>
+        </div>
+        <ul class="top-nav-li">
+          <li><a href="index.html">Plant Ruilen</a></li>
+          <li class="active"><a href="upload-file.html">Plant Plaatsen</a></li>
+          <li><a href="/">Plant Ophalen</a></li>
+          <li><a href="/">Plant Match</a></li>
+        </ul>
+      </nav>
+      <!-- Responsive mobile navigation bar -->
+    </header>
+
+    <main class="main-form">
+      <h1>Upload Plant</h1>
+      <form>
+        <fieldset class="form-file">
+          <div>
+            <input type="file" id="file-upload" />
+            <label for="file-upload" class="file-btn"
+              ><i class="fa fa-upload"></i>Upload afbeelding</label
+            >
+            <p>Upload een afbeelding of sleep het hierheen</p>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <label for="name">Naam Plant:</label>
+          <input type="text" name="name" />
+          <label for="text">Beschrijving plant</label>
+          <textarea rows="4" minlength="18" maxlength="200">
+De plant is nog maar 1 week oud, helaas door de allergieën van mijn poezen moet ik afscheid nemen van deze prachtige plant.......</textarea
+          >
+        </fieldset>
+
+        <button type="submit">Stek plaatsen</button>
+        <img href="assets/icons-plantswap/ecology.png" /><a href="/" alt="terug"
+          >Terug</a
+        >
+      </form>
+    </main>
+  </body>
+</html>
