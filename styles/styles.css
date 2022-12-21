@@ -233,19 +233,19 @@ body {
   transform: all 0.3s ease-in-out;
 }
 
-/* Responsible for the card-plants */
-
-/* display plant cards */
-
-.card-plant.easy {
+/* Responsible for the  display js */
+.card-plant.active {
   display: block;
 }
 
-.card-plant.hard {
-  display: block;
+.easy {
+  display: none;
 }
 
-.section-plant {
+.hard {
+  display: none;
+}
+*/ .section-plant {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
