@@ -22,14 +22,14 @@ let hardCheckbox = document.querySelector('input.hard-checkbox')
 console.log(plantsCards,easyCheckbox,hardCheckbox)
 
 // Responsible for adding an event listener to the easyCheckbox element that listens for a "click" event. 
-easyCheckbox.addEventListener("click", () => {
+easyCheckbox.addEventListener("change", () => {
  plantsCards.forEach(plant => {  
     if(plant.classList.contains("easy")) {  // Responsible for looping through each element in the plantsCards node list. 
         plant.classList.toggle("active") // Responsible for checking if it has the class "easy". If it does, it toggles the "active" class on that element.
          }}) 
         })
          
-hardCheckbox.addEventListener("click", () => { 
+hardCheckbox.addEventListener("change", () => { 
    plantsCards.forEach(plant => {   
     if(plant.classList.contains("hard")) {      
         plant.classList.toggle("active")   
