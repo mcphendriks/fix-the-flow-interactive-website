@@ -30,6 +30,9 @@ body {
   background-color: var(--background-code-clr);
   box-shadow: 0 2px 2px -2px rgba(0, 0, 0, 0.2);
   padding: 0 3rem 0 3rem;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
 }
 
 .top-nav a,
